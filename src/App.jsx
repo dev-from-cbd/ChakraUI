@@ -1,4 +1,4 @@
-//React JS and Chakra UI + Vite. Chakra UI is a simple, modular and accessible component library.
+import { Button } from "@chakra-ui/react";
 
 function App() {
   return (
