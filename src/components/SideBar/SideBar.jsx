@@ -9,6 +9,7 @@ import {
 } from "../../assets/constants";
 
 import { AiFillHome } from "react-icons/ai";
+import { BiLogOut } from "react-icons/bi";
 
 const SideBar = () => {
   const sidebarItems = [
@@ -69,7 +70,6 @@ const SideBar = () => {
         >
           <InstagramMobileLogo />
         </Link>
-
         <Tooltip
           hasArrow
           label={item.text}
@@ -80,7 +80,7 @@ const SideBar = () => {
         >
           <Link
             display={"flex"}
-            to={item.link || null}
+            to={"/auth"}
             as={RouterLink}
             alignContent={"center"}
             gap={4}
@@ -90,8 +90,8 @@ const SideBar = () => {
             w={{ base: 10, md: "full" }}
             justifyContent={{ base: "center", md: "flex-start" }}
           >
-            {item.icon}
-            <Box display={{ base: "none", md: "block" }}>{item.text}</Box>
+            <BiLogOut size={25} />
+            <Box display={{ base: "none", md: "block" }}>Log Out</Box>
           </Link>
         </Tooltip>
       </Flex>
