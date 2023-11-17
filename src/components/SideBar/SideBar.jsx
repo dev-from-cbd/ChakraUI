@@ -1,3 +1,4 @@
+// Importing necessary Chakra UI components and React Router components
 import { Avatar, Box, Flex, Link, Tooltip } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 import {
@@ -6,12 +7,14 @@ import {
   InstagramMobileLogo,
   NotificationsLogo,
   SearchLogo,
-} from "../../assets/constants";
+} from "../../assets/constants"; // Importing custom logos and icons
 
 import { AiFillHome } from "react-icons/ai";
 import { BiLogOut } from "react-icons/bi";
 
+// Defining the SideBar functional component
 const SideBar = () => {
+  // Array of sidebar items with icons, text, and optional links
   const sidebarItems = [
     {
       icon: <AiFillHome size={25} />,
@@ -37,6 +40,7 @@ const SideBar = () => {
     },
   ];
 
+  // Rendering the SideBar component
   return (
     <Box
       height={"100vh"}
@@ -49,6 +53,7 @@ const SideBar = () => {
       px={{ base: 2, md: 4 }}
     >
       <Flex direction={"column"} gap={10} w={"full"} height={"full"}>
+        {/* Instagram logo for larger screens */}
         <Link
           to={"/"}
           as={RouterLink}
@@ -58,6 +63,7 @@ const SideBar = () => {
         >
           <InstagramLogo />
         </Link>
+        {/* Instagram logo for mobile screens */}
         <Link
           to={"/"}
           as={RouterLink}
@@ -70,9 +76,10 @@ const SideBar = () => {
         >
           <InstagramMobileLogo />
         </Link>
+        {/* Log Out link with tooltip for mobile screens */}
         <Tooltip
           hasArrow
-          label={item.text}
+          label={item.text} // Placeholder for item.text, should be replaced with actual tooltip content
           placement="right"
           ml={1}
           openDelay={400}
