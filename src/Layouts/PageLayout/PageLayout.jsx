@@ -1,6 +1,6 @@
 import { Box, Flex } from "@chakra-ui/react";
-import { useLocation } from "react-router-dom";
 import SideBar from "../../components/SideBar/SideBar";
+import { useLocation } from "react-router-dom";
 
 const PageLayout = ({ children }) => {
   const { pathname } = useLocation();
