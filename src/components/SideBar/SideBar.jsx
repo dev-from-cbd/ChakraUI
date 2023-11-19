@@ -70,9 +70,9 @@ const SideBar = () => {
           p={2}
           display={{ base: "block", md: "none" }}
           borderRadius={6}
-          _hover={{ 
-            bg: "whiteAlpha.200", 
-        }}
+          _hover={{
+            bg: "whiteAlpha.200",
+          }}
           w={10}
           cursor="pointer"
         >
