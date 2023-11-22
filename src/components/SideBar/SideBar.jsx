@@ -93,7 +93,7 @@ const SideBar = () => {
                 display={"flex"}
                 to={item.link || null}
                 as={RouterLink}
-                alignContent={"center"}
+                alignItems={"center"}
                 gap={4}
                 _hover={{ bg: "whiteAlpha.400" }}
                 borderRadius={6}
