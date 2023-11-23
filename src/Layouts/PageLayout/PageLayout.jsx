@@ -1,4 +1,4 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react"; // Importing Chakra UI components
 import SideBar from "../../components/SideBar/SideBar";
 import { useLocation } from "react-router-dom";
 
