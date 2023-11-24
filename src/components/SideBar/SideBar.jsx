@@ -14,7 +14,6 @@ import { BiLogOut } from "react-icons/bi";
 
 // Defining the SideBar functional component
 const SideBar = () => {
-  // Array of sidebar items with icons, text, and optional links
   const sidebarItems = [
     {
       icon: <AiFillHome size={25} />,

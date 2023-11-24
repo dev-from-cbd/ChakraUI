@@ -1,7 +1,5 @@
-// Importing Chakra UI components for styling
-import { Container, Flex, Box, Image, VStack } from "@chakra-ui/react";
-// Importing the AuthForm component
-import AuthForm from "../../components/AuthForm/AuthForm";
+import { Container, Flex, Box, Image, VStack } from "@chakra-ui/react"; // Importing Chakra UI components for styling
+import AuthForm from "../../components/AuthForm/AuthForm"; // Importing the AuthForm component
 
 // Defining the AuthPage functional component
 const AuthPage = () => {
