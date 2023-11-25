@@ -9,8 +9,10 @@ import { BrowserRouter } from "react-router-dom";
 
 const styles = {
   global: (props) => ({
-    bg: mode("gray.100", "#000")(props),
-    color: mode("gray.800", "whiteAlpha.900")(props),
+    body: {
+      bg: mode("gray.100", "#000")(props),
+      color: mode("gray.800", "whiteAlpha.900")(props),
+    },
   }),
 };
 
@@ -24,7 +26,7 @@ const theme = extendTheme({ config, styles });
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <ChakraProvider>
+      <ChakraProvider theme={theme}>
         <App />
       </ChakraProvider>
     </BrowserRouter>

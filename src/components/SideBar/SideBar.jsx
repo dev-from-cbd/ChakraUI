@@ -106,26 +106,26 @@ const SideBar = () => {
             </Tooltip>
           ))}
         </Flex>
-
         {/* Log Out link with tooltip for mobile screens */}
         <Tooltip
           hasArrow
-          label={item.text} // Placeholder for item.text, should be replaced with actual tooltip content
+          label={"Log Out"} // Placeholder for item.text, should be replaced with actual tooltip content
           placement="right"
           ml={1}
-          openDelay={400}
+          openDelay={500}
           display={{ base: "block", md: "none" }}
         >
           <Link
             display={"flex"}
             to={"/auth"}
             as={RouterLink}
-            alignContent={"center"}
+            alignItems={"center"}
             gap={4}
             _hover={{ bg: "whiteAlpha.400" }}
             borderRadius={6}
             p={2}
             w={{ base: 10, md: "full" }}
+            mt={"auto"}
             justifyContent={{ base: "center", md: "flex-start" }}
           >
             <BiLogOut size={25} />

@@ -1,5 +1,7 @@
+import { Container } from "@chakra-ui/react";
+
 const HomePage = () => {
-  return <div>HomePage!</div>;
+  return <Container maxW={""}>HomePage!!</Container>;
 };
 
 export default HomePage;
