@@ -15,7 +15,7 @@ const PostHeader = () => {
           <Box color={"gray.500"}> •3d</Box>
         </Flex>
       </Flex>
-      <Box>Box</Box>
+      <Box>Unfollow</Box>
     </Flex>
   );
 };
