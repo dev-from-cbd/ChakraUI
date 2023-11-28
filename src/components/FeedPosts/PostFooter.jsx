@@ -1,5 +1,11 @@
+import { Flex } from "@chakra-ui/react";
+
 const PostFooter = () => {
-  return <div>Post Footer</div>;
+  return (
+    <>
+      <Flex>Post Footer</Flex>
+    </>
+  );
 };
 
 export default PostFooter;
