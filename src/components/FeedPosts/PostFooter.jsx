@@ -1,4 +1,4 @@
-import { Flex, Box } from "@chakra-ui/react";
+import { Flex, Box, Text } from "@chakra-ui/react";
 import { useState } from "react";
 import NotificationsLogo from "../../assets/constants";
 import UnlikeLogo from "../../assets/constants";
@@ -26,8 +26,8 @@ const PostFooter = () => {
           <CommentLogo />
         </Box>
       </Flex>
-      <Text>
-        {likes} {likes === 1 ? "like" : "likes"}
+      <Text fontWeight={}>
+        {likes} likes
       </Text>
     </>
   );
