@@ -26,8 +26,11 @@ const PostFooter = () => {
           <CommentLogo />
         </Box>
       </Flex>
-      <Text fontWeight={}>
+      <Text fontWeight={600} fontSize={"sm"}>
         {likes} likes
+      </Text>
+      <Text fontWeight={700} fontSize={"sm"}>
+        programmer
       </Text>
     </>
   );
