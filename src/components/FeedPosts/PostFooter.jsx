@@ -16,6 +16,7 @@ const PostFooter = () => {
       setLikes(likes + 1);
     }
   };
+  
   return (
     <>
       <Flex alignItems={"center"} gap={4} w="full" pt={0} mb={2} mt={"auto"}>
@@ -30,7 +31,13 @@ const PostFooter = () => {
         {likes} likes
       </Text>
       <Text fontWeight={700} fontSize={"sm"}>
-        programmer
+        Dev-from-CBD_{''}
+        <Text as={"span"} fontWeight={400}>
+          Feeling good
+        </Text>
+      </Text>
+      <Text fontSize={"sm"} color={"gray"}>
+        View all 54321 comments
       </Text>
     </>
   );
