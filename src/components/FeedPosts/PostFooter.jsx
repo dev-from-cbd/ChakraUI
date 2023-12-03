@@ -16,22 +16,23 @@ const PostFooter = () => {
       setLikes(likes + 1);
     }
   };
-  
+
   return (
     <>
-      <Flex alignItems={"center"} gap={4} w="full" pt={0} mb={2} mt={"auto"}>
+      <Flex alignItems={"center"} gap={4} w="full" pt={0} mb={2} mt={4}>
         <Box onClick={handleLike} cursor={"pointer"} fontSize={18}>
           {!liked ? <NotificationsLogo /> : <UnlikeLogo />}
         </Box>
+
         <Box cursor={"pointer"} fontSize={18}>
           <CommentLogo />
         </Box>
       </Flex>
-      <Text fontWeight={600} fontSize={"sm"}>
+      <Text fontSize={"sm"} fontWeight={600}>
         {likes} likes
       </Text>
-      <Text fontWeight={700} fontSize={"sm"}>
-        Dev-from-CBD_{''}
+      <Text fontSize={"sm"} fontWeight={700}>
+        Dev-from-CBD_{" "}
         <Text as={"span"} fontWeight={400}>
           Feeling good
         </Text>
