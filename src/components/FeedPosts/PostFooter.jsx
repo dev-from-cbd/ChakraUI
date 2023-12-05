@@ -4,6 +4,7 @@ import {
   Text,
   InputGroup,
   InputRightElement,
+  Button,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import {
@@ -12,11 +13,11 @@ import {
   UnlikeLogo,
   Input,
 } from "../../assets/constants";
-import { color } from "framer-motion";
 
 const PostFooter = () => {
   const [liked, setLiked] = useState(false);
   const [likes, setLikes] = useState(1000);
+
   const handleLike = () => {
     if (liked) {
       setLiked(false);
@@ -38,7 +39,7 @@ const PostFooter = () => {
           <CommentLogo />
         </Box>
       </Flex>
-      <Text fontSize={"sm"} fontWeight={600}>
+      <Text fontWeight={600} fontSize={"sm"}>
         {likes} likes
       </Text>
       <Text fontSize={"sm"} fontWeight={700}>
@@ -60,7 +61,7 @@ const PostFooter = () => {
         <InputGroup>
           <Input
             variant={"flushed"}
-            placeContent={"Add a comment"}
+            placeholder={"Add a comment"}
             fontSize={14}
           />
           <InputRightElement>
@@ -70,6 +71,7 @@ const PostFooter = () => {
               fontWeight={600}
               cursor={"pointer"}
               _hover={{ color: "white" }}
+              bg={"transparent"}
             >
               Button
             </Button>
