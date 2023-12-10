@@ -1,36 +1,29 @@
-import { Container, Flex, Box, Image, VStack } from "@chakra-ui/react"; // Importing Chakra UI components for styling
-import AuthForm from "../../components/AuthForm/AuthForm"; // Importing the AuthForm component
+import { Container, Flex, VStack, Box, Image } from "@chakra-ui/react";
+import AuthForm from "../../components/AuthForm/AuthForm";
 
-// Defining the AuthPage functional component
 const AuthPage = () => {
-  // Rendering the AuthPage component
   return (
     <Flex minH={"100vh"} justifyContent={"center"} alignItems={"center"} px={4}>
-      {/* Container for setting maximum width and padding */}
       <Container maxW={"container.md"} padding={0}>
-        {/* Flex container for layout with centered and spaced elements */}
         <Flex justifyContent={"center"} alignItems={"center"} gap={10}>
-          {/* Left Hand-Side - Image section, visible on larger screens */}
+          {/* Left hand-side */}
           <Box display={{ base: "none", md: "block" }}>
-            <Image src="/insta.png" h="400" alt="Phone Image" />
+            <Image src="/auth.png" h={650} alt="Phone img" />
           </Box>
-          {/* Right Hand-Side - Authentication form and additional content */}
-          <VStack spacing={4} alignC={"stretch"}>
-            {/* AuthForm component for handling authentication */}
+
+          {/* Right hand-side */}
+          <VStack spacing={4} align={"stretch"}>
             <AuthForm />
-            {/* Text indicating to get the app */}
-            <Box textAlign={"Center"}>Get the App!!</Box>
-            {/* Flex container for app store logos */}
+            <Box textAlign={"center"}>Get the app.</Box>
             <Flex gap={5} justifyContent={"center"}>
-              <Image src="/app-store.png" h={10} alt="App Store" />
-              <Image src="/googleplay.png" h={10} alt="Google Play Store" />
+              <Image src="/playstore.png" h={"10"} alt="Playstore logo" />
+              <Image src="/microsoft.png" h={"10"} alt="Microsoft logo" />
             </Flex>
-          </VStack>{" "}
+          </VStack>
         </Flex>
       </Container>
     </Flex>
   );
 };
 
-// Exporting the AuthPage component
 export default AuthPage;
